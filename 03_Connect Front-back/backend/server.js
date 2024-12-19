@@ -16,3 +16,7 @@ const Myjokes = [
 app.get("/api/message", (req, res) => {
 	res.json(Myjokes);
 });
+
+app.listen(PORT, () => {
+	console.log(`Server is running on http://localhost:${PORT}/api/message`);
+});
