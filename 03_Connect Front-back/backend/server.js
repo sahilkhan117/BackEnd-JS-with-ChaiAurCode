@@ -11,3 +11,8 @@ const Myjokes = [
 	{id: 6, title: "6th Joke", joke: "Joke Six"},
 	{id: 7, title: "7th Joke", joke: "Joke Seven"},
   ]
+
+  // Define a simple API route
+app.get("/api/message", (req, res) => {
+	res.json(Myjokes);
+});
