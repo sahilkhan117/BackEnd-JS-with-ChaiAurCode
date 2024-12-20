@@ -11,7 +11,15 @@ function App() {
 	});
 
 	return (
-		
+		<div>
+			<h1>Sahil Chai</h1>
+			{jokes.map((joke, idx) => (
+				<div key={idx}>
+					<h3>{joke.title}</h3>
+					<p>{joke.joke}</p>
+				</div>
+			))}
+		</div>
 	);
 }
 
